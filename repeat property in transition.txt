@@ -1,0 +1,9 @@
+transition={{
+        duration: 1, // Total animation duration
+        ease:'easeInOut',
+        repeat: Infinity, // Loop the animation
+        repeatType: 'reverse' // Reverse the animation on each loop
+      }}
+
+# repeat : Infinity dene se animaion ka loop bn jata 
+# repeatType:'reverse' dene se loop k time reverse animation bhi hota hai jiske karan smoothly animation repeat hogi

@@ -1,0 +1,8 @@
+1- initial prop hmesha animate prop k sath use hota 
+   - ismein bhi css property hi aati 
+
+<motion.div  initial={{fontSize:'3rem'}} transition={{ease:"easeIn",duration:2,}} animate={{fontSize:'5rem'}}> hello </motion.div>
+
+# flow - 
+1- load hone k baad initial wali css dikhegi 
+2- fir 2 second baad (jitna bhi time transition mein doge) animate prop wali css aa jayegi 

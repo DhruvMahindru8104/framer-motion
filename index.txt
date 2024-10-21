@@ -1,0 +1,10 @@
+1-importing {motion} 
+2- animate prop
+3-initial prop(this will always use with animate prop)
+4- x and y coordinates in framer motion 
+5- transition prop
+6- keyframes 
+7- repeat property in transition 
+gestures -
+
+1- whilehover prop

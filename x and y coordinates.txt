@@ -1,0 +1,10 @@
+1- x and y k andr k units 
+    - rem (x:'2 rem")
+    - vh or vw . agr (-100vw diya to viewport se ek dum gayab agr x="-20vw" diya to viewport ka 20 percent hi dikhega)
+    - px (x:4 means x:'4px")
+
+2- in simple yeh x and y coordinates css position k top left bottom right k trh hai . 
+    - agr x ki value negative mein hai to element apni jgh se left move krega
+    - agr x ki value positive mein hai to element apni jgh se right move krega
+    - agr y ki value negative mein hai to element apni jgh bottom se move krega
+    - agr x ki value positive mein hai to element apni jgh top se move krega

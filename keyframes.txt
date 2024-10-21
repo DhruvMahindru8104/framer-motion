@@ -1,0 +1,6 @@
+-animate={{scale:[1.2,1,1.2,1]}}>mydiv</motion.div> # with keyframes  (pehle mydiv ka scale 1.2 hoga fir 1 fir 1.2 fir 1)
+-animate={{scale:1.2}}>mydiv</motion.div> # without keyframes  (ismein load hone k baad mydiv ka scale 1.2 hi hoga)
+
+->>> keyframes mein jo css value hai vo change hoti hai and jo values hongi vo [] brackets mein hongi 
+
+- with repeat:Infinity krke hum us animation ko infinite time chla skte . 

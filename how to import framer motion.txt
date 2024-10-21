@@ -1,0 +1,8 @@
+step 1- import {motion} from 'framer-motion'
+
+yeh aapke jsx file mein framer motion ko import kr dega 
+
+- and agr kisi bhi html tag ko animate krwana to use wrap kr dena motion mein like this
+
+<motion.div>hello</motion.div>
+<motion.h1>hello</motion.h1>

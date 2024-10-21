@@ -1,0 +1,4 @@
+1- whilehover prop mein bhi vo css daalo jo hover krne pr show hogi 
+
+example:
+<motion.div whilehover={{textColor:'blue',fontSize:"4rem"}}>hello</motion.div>

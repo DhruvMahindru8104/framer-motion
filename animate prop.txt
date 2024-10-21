@@ -1,0 +1,7 @@
+1-simple animate prop k andr hum css daalte hai jo ki page load hone pe change hoti 
+
+example - 
+<motion.div classname='text-color-red-400' animate={{text-color:'orange'}}>hello<motion.div>
+"vaise to div ka text color red hoga but jb load hoga page to color ho jayega orange  "
+
+summary-> hum animate prop mein vo css property likhte hai jo ki animate hogi after page reload . agr animate mein red bg diya hai to load hone k baad aapka bg-red ho jayega . 
