@@ -18,7 +18,7 @@ function page() {
             offset: ["end center", " end start"],
         }
     )
-    const val=useTransform(scrollYProgress,[0,1],[0,50])
+    const val=useTransform(scrollYProgress,[0,1],[0,50]) // converting use scroll [0,1] values to [0,50] with use transform
     useEffect(() => {
         console.log(targetref.current); // Check if the ref is correctly targeting the element
       }, []);
@@ -32,7 +32,7 @@ Lorem ipsum dolor sit amet, consectetur adipisicing elit. Odit non necessitatibu
 
 
 
-<div className='w-full h-[50vh] bg-blue-600 pt-64    overflow-hidden' ref={targetref}  >
+<div className='w-full h-[50vh] bg-blue-600 pt-64    overflow-hidden' ref={targetref}  > // jb yeh targetref humne use scroll mein diya hai isliye jb yeh viewprt pe aayega tbhi scroll tracking start hogi 
     a
     </div>
     <motion.div className='bg-red-600 w-1/5 items-center  ' style={{x:val} } transition={{duration:4}} >hello</motion.div>
