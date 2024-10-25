@@ -4,7 +4,8 @@ yeh useviewport hook hai
     -> whileinview prop . (ismien css aayegi jo element ko animate kregi after vo viewport mein dikh jaye).
     -> viewport prop.(iski bhi 2 properties hai ).
         -amount( kitne % of the element needs to be visible to trigger the animation, but you can adjust this value as needed.(iski value 0 se 1 hogi)).
-        -once (agr true hai to hr baar viewport pr aane k baad animate hoga and jb viewport k bahr aayega to initial state mein aa jayega(initial prop wali css) , agr false hai to sirf ek baar hi animate hoga  ).```
+        -once (agr true hai to hr baar viewport pr aane k baad animate hoga and jb viewport k bahr aayega to initial state mein aa jayega(initial prop wali css) , agr false hai to sirf ek baar hi animate hoga  ).
+```
 
 **this is use scroll and use transform**
 ```jsx
