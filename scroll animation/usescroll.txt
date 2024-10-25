@@ -1,0 +1,5 @@
+use scroll and use transform hmesha ek sath use honge . use scroll 0 se 1 k beech mein value deta and use transform value ko given value mein translate krta . jo value hogi use transform ki vo style tag mein aayegi .
+
+use ref , (isse scroll tbhi hoga jb viewport pe aayega ) (offset property (ev formula element viewport to start animation))
+
+jis html element mein hum ref de de to jb vo viewport pe show hoga tb hi animation start hogi scroll k time pe .

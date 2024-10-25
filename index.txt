@@ -5,6 +5,12 @@
 5- transition prop
 6- keyframes 
 7- repeat property in transition 
-gestures -
 
+
+gestures -
 1- whilehover prop
+
+scroll- 
+1- while in view
+2- use scroll and use transform
+
