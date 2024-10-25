@@ -15,10 +15,10 @@ import { useRef ,useEffect} from 'react'
 import { motion,useScroll,useTransform } from 'framer-motion'
 function page() {
     const targetref=useRef()
-    var {scrollYProgress}=useScroll(
+    var {scrollYProgress}=useScroll( // iske andr 4 values hoti hai hum deconstruct krke sirf ek hi value le rhe hai scrollYprogress
         {
-            target:targetref,
-            offset: ["end center", " end start"],
+            target:targetref, // jb yeh element viewport pe aayega tbhi scroll tracking start hogi 0 se 1 k beech mein
+            offset: ["end center", " end start"], // offset[0] means animation kb start hogi , offset[1] means animation kb end hogi . niche ev formula mein iske baare mein aur pta lgega
         }
     )
     const val=useTransform(scrollYProgress,[0,1],[0,50]) // converting use scroll [0,1] values to [0,50] with use transform
@@ -38,7 +38,7 @@ Lorem ipsum dolor sit amet, consectetur adipisicing elit. Odit non necessitatibu
 <div className='w-full h-[50vh] bg-blue-600 pt-64    overflow-hidden' ref={targetref}  > // jb yeh targetref humne use scroll mein diya hai isliye jb yeh viewprt pe aayega tbhi scroll tracking start hogi 
     a
     </div>
-    <motion.div className='bg-red-600 w-1/5 items-center  ' style={{x:val} } transition={{duration:4}} >hello</motion.div>
+    <motion.div className='bg-red-600 w-1/5 items-center  ' style={{x:val} } transition={{duration:4}} >hello</motion.div> // use transform wali value ko hum style mein add kr rhe taki scroll pr animate ho yeh div
 
     Lorem ipsum dolor sit, amet consectetur adipisicing elit. Quibusdam pariatur modi nisi omnis distinctio odio laudantium labore, itaque soluta dolores magni, aspernatur impedit a fugiat voluptatum nemo error praesentium veniam porro illo! Dolorum, dolore. Provident, aspernatur esse minus atque officiis harum enim accusantium itaque cum reprehenderit maiores commodi vitae facere sapiente dolorem. Recusandae laboriosam minima tempore iste saepe at voluptate error hic doloribus aliquam asperiores repellat quidem ad, distinctio fuga optio officiis mollitia sequi? Quibusdam itaque ipsam aut voluptas aliquid, dolor veritatis? Molestias deleniti qui ab vel architecto voluptates minima omnis nostrum magni voluptatem, totam quis facere. Tenetur debitis labore, eaque assumenda ad, atque ipsum exercitationem necessitatibus aperiam fuga explicabo? Natus perspiciatis animi necessitatibus. Tempora suscipit aliquam at modi et adipisci dolor mollitia sint nulla, repudiandae ad dolores voluptas. Eius blanditiis veniam nostrum molestiae id earum, hic minima eos porro consectetur quo corrupti quos modi, ipsam repellendus in error necessitatibus eveniet odit autem esse, eligendi ab. Doloremque ipsam accusamus corrupti rem esse mollitia dolorum aut placeat adipisci, voluptatibus architecto laudantium officia neque, nemo fugiat distinctio odit ipsa eveniet, id provident tenetur quibusdam cupiditate nulla reprehenderit. Veritatis fugit quibusdam laudantium quo fugiat voluptas illo et? Modi voluptatibus illo odio animi porro eveniet cumque commodi repudiandae delectus at consequatur deleniti cupiditate molestiae minus quis, molestias alias velit excepturi! Quibusdam labore quaerat expedita beatae excepturi deleniti minus dicta neque? Iure ad, facilis dignissimos fugiat, iste consequatur blanditiis rem asperiores eligendi totam minus maiores explicabo facere alias molestiae distinctio eum culpa aspernatur? Rem, voluptas placeat! Veritatis odit sequi eveniet quis dolorum amet quaerat veniam molestias perspiciatis velit dolor, perferendis rerum consequuntur nemo excepturi repellendus laborum aliquam eos? Excepturi, distinctio quas dolores sint tempora culpa repudiandae aut fugiat ad natus earum assumenda fuga ut facilis. Distinctio, rem, nam laudantium obcaecati deserunt cumque repudiandae explicabo nesciunt vero ratione reprehenderit adipisci maxime totam omnis impedit esse quia dolorem? Iure accusamus laudantium inventore aut vitae maiores magnam deserunt, modi a optio facere temporibus distinctio molestias odio necessitatibus perspiciatis expedita rerum earum. Ut sapiente pariatur in maxime nemo, dicta laboriosam, provident modi repellat aperiam nulla id ad eius dolor accusamus cum tempora porro quae velit repudiandae iste? Odio ex possimus nihil accusamus ipsa officia temporibus modi sunt exercitationem aperiam reprehenderit, natus necessitatibus doloribus corporis, aut amet consequuntur ratione ea molestias placeat? Delectus enim illum quod dolorem quia harum vel commodi voluptas, repellat maxime tempore doloremque est! Veritatis, eligendi! Dolorum?
     </>
@@ -48,13 +48,14 @@ Lorem ipsum dolor sit amet, consectetur adipisicing elit. Odit non necessitatibu
 export default page
 ```
 
+**use scroll ka offset option **
 ```jsx
 offset: ["start end", "end end"]:
 
-"start end": Yeh define karta hai ki scroll tracking(animation) tab shuru hoga jab target element ka start point viewport ke end (bottom) se match ho jaye.
-"end end": Yeh define karta hai ki scroll tracking(animation) tab khatam hoga jab target element ka end point viewport ke end (bottom) se match ho jaye. 
+"start end": Yeh define karta hai ki scroll tracking(animation) tab shuru hoga( jab target element ka start point viewport ke end (bottom) se match ho jaye.)
+"end end": Yeh define karta hai ki scroll tracking(animation) tab khatam hoga( jab target element ka end point viewport ke end (bottom) se match ho jaye.) 
 
-use ev formula first element and then viewport 
+use ev formula (first element and then viewport )
 ```
 
 
