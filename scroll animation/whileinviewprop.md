@@ -4,16 +4,7 @@
         -amount( kitne % of the element needs to be visible to trigger the animation, but you can adjust this value as needed.(iski value 0 se 1 hogi)).
         -once (agr true hai to hr baar viewport pr aane k baad animate hoga and jb viewport k bahr aayega to initial state mein aa jayega(initial prop wali css) , agr false hai to sirf ek baar hi animate hoga  ).
 
-
-      <motion.div
-      initial={{ opacity: 0, scale: 0.8 }}
-      whileInView={{ opacity: 1, scale: 1 }}
-      viewport={{once:true,amount: 0.5 }} 50% of the element needs to be visible to trigger the animation, but you can adjust this value as needed.(iski value 0 se 1 hogi)
-      transition={{ duration: 0.8 }}
-    >
-      I'm animating when scrolled into view!
-    </motion.div>
-
+```jsx
 
 'use client'
 import React from 'react'
@@ -52,16 +43,16 @@ Lorem ipsum dolor sit amet, consectetur adipisicing elit. Odit non necessitatibu
 }
 
 export default page
+```
 
-
-
+```jsx
 offset: ["start end", "end end"]:
 
 "start end": Yeh define karta hai ki scroll tracking(animation) tab shuru hoga jab target element ka start point viewport ke end (bottom) se match ho jaye.
 "end end": Yeh define karta hai ki scroll tracking(animation) tab khatam hoga jab target element ka end point viewport ke end (bottom) se match ho jaye. 
 
 use ev formula first element and then viewport 
-
+```
 
 
 Sure! Chalo, is code ko samajhte hain step by step. Yeh example Framer Motion ka istemal karta hai, jisse hum scrolling ke dauran animation create kar sakte hain.
